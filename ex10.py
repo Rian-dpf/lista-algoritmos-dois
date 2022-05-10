@@ -6,6 +6,11 @@
 preco_pao = float(input('Qual o preço do pão hoje: '))
 preco_pao_vezes_50 = preco_pao * 50
 
-while preco_pao <= preco_pao_vezes_50:
-    preco_pao *= preco_pao
-    print(preco_pao)
+cont = 1
+
+while cont <= 50:
+    tabela = preco_pao + preco_pao
+
+    cont += 1
+
+    print(tabela)
