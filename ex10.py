@@ -3,14 +3,9 @@
 #programa que monta a tabela de preços de pães, de 1 até 50 pães, a partir do preço do pão informado
 #pelo usuário, conforme o exemplo abaixo:
 
-preco_pao = float(input('Qual o preço do pão hoje: '))
-preco_pao_vezes_50 = preco_pao * 50
+preco = float(input("Preço do pão: "))
 
-cont = 1
+print("Panificadora Pão de Ontem - Tabela de preços")
 
-while cont <= 50:
-    tabela = preco_pao + preco_pao
-
-    cont += 1
-
-    print(tabela)
+for i in range(1, 51):
+    print(f"{i:2d} - R$ {preco*i:5.2f}")

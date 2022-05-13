@@ -5,14 +5,14 @@
 num_1 = int(input('Digite um número: '))
 num_2 = int(input('Digite outro número: '))
 
-diferenca  = num_1 - num_2
+soma = 0
+mult = 1
 
-if num_1 > num_2:
-    if diferenca % 2 == 0:
-        for i in range(num_2, num_1 + 1):
-            if i % 2 != 0:
-                continue
-            else:
-                teste = []
-                teste.append(i)
-                print(teste)
+for i in range(num_1, num_2 + 1):
+    if i % 2 == 0:
+        soma += i
+    else:
+        mult *= i
+
+print('A soma dos pares é igual a: ', soma)
+print('A multiplicação dos ímpares é igual a: ', mult)

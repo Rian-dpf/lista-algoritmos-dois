@@ -2,4 +2,7 @@
 #função deve imprimir todos os elementos da lista numerando-os.
 
 def imprimiNumerando(lista):
-    pass
+    for i in range(0, len(lista)):
+      print(f'{lista[i]} : {i}')
+
+imprimiNumerando([1,5,7])

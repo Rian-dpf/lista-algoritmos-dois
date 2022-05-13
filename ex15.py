@@ -1,9 +1,19 @@
 #15 - Escreva uma função Python que receba uma lista e retorne uma nova lista com elementos
 #exclusivos da primeira lista.
 
-def retornaExclusivos(lista):
-    for i in range(len(lista)):
-        print(i)
-        print(lista[i])
+numeros = [1, 2, 2, 3, 3, 4, 5]
 
-retornaExclusivos([2,3,4,5,6])
+
+def pegaNumerosUnicos(numeros):
+
+    lista_numeros_unicos = []
+
+    numeros_unicos = set(numeros)
+
+    for numero in numeros_unicos:
+        lista_numeros_unicos.append(numero)
+
+    return lista_numeros_unicos
+
+
+print(pegaNumerosUnicos(numeros))
